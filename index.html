@@ -5,59 +5,65 @@
 <link rel="shortcut icon" href="favicon.ico"/>
 <style>
 @font-face {
-        font-family: "Niramit";
-        src: url(Niramit-Regular.ttf);
+	font-family: "Niramit Regular";
+	src: url(Niramit-Regular.ttf);
 }
-html {
-	background: #FF5B18
+@font-face {
+	font-family: "Niramit Bold";
+	src: url(Niramit-Bold.ttf);
+}
+html {background:#FF5B18}
+footer {position: relative}
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto
+}
+th {
+	padding-left: 16px;
+	padding-right: 16px;
+	text-align: left
 }
 * {
 	color: #fff;
-    font-family: "Niramit";
-	font-size: 24px;
+    font-family: "Niramit Regular";
+	font-size: 20px;
 	line-height: 1.15
 }
+h1 {
+	font-family: "Niramit Bold";
+	font-size: 30px
+}
 a {
-	font-size: 24px;
+	font-size: 20px;
 	transition: font-size 0.2s
 }
-a:hover {
-	font-size: 32px
-}
-footer {
-	position: relative
-}
-.center {
-	text-align: center
-}
-.woo {
-	animation-name: ea;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-}
-@keyframes ea {
-	0% {tranform: rotate(0deg);}
-	25% {tranform: rotate(-2deg);}
-	50% {tranform: rotate(2deg);}
-	100% {tranform: rotate(0eg);}
-}
+a:hover {font-size:30px}
 </style>
 </head>
-<body>
-<section class="center">
-	<img src="bitter!mc.png" class="woo" style="height:240px;margin-top:64px">
-	<p>
-	Download links:<br>
-	<a href="client mods.zip" download>Client mods</a><br>
-	<a href="server mods.zip" download>Server mods (for ifritdiezel)</a><br><br>
-	Socials:<br>
-	<a href="https://discord.gg/ymYxAeXE7h">Discord server</a><br>
-	<a href="https://twitter.com/macdowntwo">macimas' Twitter</a>
+<body class="center">
+	<img src="bitter!mc.png" style="height:220px;margin-top:24px">
+	<p class="center"> 
+		<h1>About</h1>
+		It's basically just a boring Minecraft survival multiplayer server.<br>
+		Nothing more, really. Also the players like to cheat, but I (macimas) cheat more than anyone else.
 	</p>
-	
+	<table class="center">
+	<tr>
+		<th>
+			<h1>Download links</h1>
+			<a href="client mods.zip" download>Client mods</a><br>
+			<a href="server mods.zip" download>Server mods</a>
+		</th>
+		<th>
+			<h1>Socials</h1>
+			<a href="https://discord.gg/ymYxAeXE7h">Discord server</a><br>
+			<a href="https://twitter.com/macdowntwo">macimas' Twitter</a>
+		</th>
+	</tr>
+	</table>
 	<footer>
-	<p style="font-size:14px">bluehouse studios 2021</p>
-</footer>
-</section>
+		<p style="font-size:14px">bluehouse studios 2021</p>
+	</footer>
 </body>
 </html>
