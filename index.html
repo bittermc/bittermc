@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>bitter!mc</title>
-<link rel="shortcut icon" href="favicon.jpg"/>
+<link rel="shortcut icon" href="favicon.ico"/>
 <style>
 @font-face {
         font-family: "Niramit";
@@ -17,18 +17,35 @@ html {
 	font-size: 24px;
 	line-height: 1.15
 }
-.center {
-	text-align: center
+a {
+	font-size: 24px;
+	transition: font-size 0.2s
+}
+a:hover {
+	font-size: 32px
 }
 footer {
 	position: relative
 }
-
+.center {
+	text-align: center
+}
+.woo {
+	animation-name: ea;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+@keyframes ea {
+	0% {tranform: rotate(0deg);}
+	25% {tranform: rotate(-2deg);}
+	50% {tranform: rotate(2deg);}
+	100% {tranform: rotate(0eg);}
+}
 </style>
 </head>
 <body>
 <section class="center">
-	<img src="bitter!mc.png" style="height:240px;margin-top:64px">
+	<img src="bitter!mc.png" class="woo" style="height:240px;margin-top:64px">
 	<p>
 	Download links:<br>
 	<a href="client mods.zip" download>Client mods</a><br>
