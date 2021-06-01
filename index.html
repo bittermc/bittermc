@@ -3,6 +3,7 @@
 <head>
 <title>bitter!mc</title>
 <link rel="shortcut icon" href="favicon.ico"/>
+
 <style>
 @font-face {
 	font-family: "Niramit Regular";
@@ -12,58 +13,71 @@
 	font-family: "Niramit Bold";
 	src: url(Niramit-Bold.ttf);
 }
-html {background:#FF5B18}
-footer {position: relative}
-.center {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto
+html {background:#101010}
+footer {
+    background: black;
+    position: absolute;
+	padding-top: 16px;
+	padding-bottom: 16px;
+    bottom: 0;
+	width: 100%;
+}
+td {text-align: left}
+* {
+	font-family: "Niramit Regular";
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.15;
+	text-shadow: 1px 1px #000
 }
 th {
-	padding-left: 16px;
-	padding-right: 16px;
+	font-family: "Niramit Bold";
+	font-size: 24px;
 	text-align: left
 }
-* {
-	color: #fff;
-    font-family: "Niramit Regular";
-	font-size: 20px;
-	line-height: 1.15
-}
-h1 {
-	font-family: "Niramit Bold";
-	font-size: 30px
-}
 a {
-	font-size: 20px;
-	transition: font-size 0.2s
+	font-family: "Niramit Bold";
+	text-decoration: none;
+	font-size: 18px;
+	color: #FF5B18;
+	transition: text-shadow 0.2s; 
 }
-a:hover {font-size:30px}
+a:hover {
+	text-shadow:0px 0px 4px #E33700;
+}
+.center {
+	text-align: center;
+	margin: auto
+}
 </style>
 </head>
 <body class="center">
-	<img src="bitter!mc.png" style="height:220px;margin-top:24px">
-	<p class="center"> 
-		<h1>About</h1>
-		It's basically just a boring Minecraft survival multiplayer server.<br>
-		Nothing more, really. Also the players like to cheat, but I (macimas) cheat more than anyone else.
-	</p>
-	<table class="center">
+<header>
+	<img src="bitter!mc banner.png" style="height: 240px;width: 100%;object-fit: cover">
+</header>
+<p>bitter!mc is basically a boring minecraft smp server<br>it's not really great, but i guess it's ok?<br><br></p>
+<table class="center" border="0">
 	<tr>
-		<th>
-			<h1>Download links</h1>
-			<a href="client mods.zip" download>Client mods</a><br>
-			<a href="server mods.zip" download>Server mods</a>
-		</th>
-		<th>
-			<h1>Socials</h1>
-			<a href="https://discord.gg/ymYxAeXE7h">Discord server</a><br>
-			<a href="https://twitter.com/macdowntwo">macimas' Twitter</a>
-		</th>
+		<td style="width:48px"/>
+		<th>mods</th>
+		<td style="width:48px"/>
+		<th>socials</th>
 	</tr>
-	</table>
-	<footer>
-		<p style="font-size:14px">bluehouse studios 2021</p>
-	</footer>
+	<tr style="height: 30px;">
+		<td style="width: 48px"><img src="svg/client.svg"/>
+		<td style="width: 140px"><a href="mods/client mods.zip">client mods</a></td>
+		<td style="width: 48px"><img src="svg/discord.svg"/>
+		<td style="width: 200px"><a href="https://discord.gg/ymYxAeXE7h">bitter!mc discord server</a></td>
+	</tr>
+	<tr>
+		<td style="width: 48px"><img src="svg/server.svg"/>
+		<td style="width: 140px"><a href="mods/server mods.zip">server mods</a></td>
+		<td style="width: 48px"><img src="svg/twitter.svg"/>
+		<td style="width: 200px"><a href="https://twitter.com/macdowntwo">macimas' twitter</a></td>
+	</tr>
+</table>
+<footer>
+	<img src="svg/whitehouse.svg"/>
+</footer>
 </body>
 </html>
