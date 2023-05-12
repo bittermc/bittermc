@@ -1,10 +1,10 @@
 @font-face {
 	font-family: "Niramit Regular";
-	src: url(fonts/Niramit-Regular.ttf);
+	src: url(/font//Niramit-Regular.ttf);
 }
 @font-face {
 	font-family: "Niramit Bold";
-	src: url(fonts/Niramit-Bold.ttf);
+	src: url(/font/Niramit-Bold.ttf);
 }
 
 html { background:#101010 }
